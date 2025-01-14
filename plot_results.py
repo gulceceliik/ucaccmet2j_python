@@ -12,9 +12,9 @@ import plotnine as gg
 from plotnine import ggplot
 
 months = calendar.month_name[1:]  # Get a list of month names
-
 with open("results.json") as file:
     results = json.load(file)
+
 
 # Check that actual data was found and loaded, and if not, terminate the script
 if not results:
